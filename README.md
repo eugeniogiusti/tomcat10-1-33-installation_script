@@ -1,7 +1,10 @@
 # Tomcat10_1_33_installation_script
 
 This script has been tested on **AlmaLinux 9.5** and is compatible with the latest versions of **Rocky Linux** and **Red Hat**.  
-It installs **Java 11** and **Tomcat 10.1.33**. Feel free to adapt the script for other purposes or scenarios.
+It installs **Java 11** and **Tomcat 10.1.33**. 
+You can manage Tomcat through systemd.
+The service's name is tomcat.
+Feel free to adapt the script for other purposes or scenarios.
 
 ## How to Use
 
