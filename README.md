@@ -12,7 +12,6 @@ It installs **Java 11** and **Tomcat 10.1.33**. Feel free to adapt the script fo
    ```bash
    git clone https://github.com/eugeniogiusti/tomcat10_1_33_installation_script.git
    
-   ```bash
    cd tomcat10_1_33_installation_script.git
 
 
@@ -24,22 +23,24 @@ Give the script executable permissions:
 
 4. Run the Script
 Switch to the root user if you don't want to enter the password during the process:
-sudo su
-./install_tomcat.sh
+   ```bash
+   sudo su
+   ./install_tomcat.sh
 
 
-5. Configure Firewall Rule if you don't have it
-firewall-cmd --zone=public --add-port=8080/tcp --permanent
-firewall-cmd --reload
+6. Configure Firewall Rule if you don't have it:
+   ```bash
+   firewall-cmd --zone=public --add-port=8080/tcp --permanent
+   firewall-cmd --reload
   
 
-6. Verify the Firewall Configuration
+8. Verify the Firewall Configuration
 Ensure the rule has been applied:
-firewall-cmd --list-all
+   ```bash
+   firewall-cmd --list-all
+
    
-7. Test Tomcat
+10. Test Tomcat
 Open your browser and navigate to:
-
+   ```bash
 http://your_ip:8080/
-
-Enjoy your installation!
