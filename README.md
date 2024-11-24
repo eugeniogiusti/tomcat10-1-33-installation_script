@@ -22,7 +22,7 @@ Give the script executable permissions:
    chmod +x install_tomcat.sh
 
 
-4. Run the Script
+4. Run the Script &
 Switch to the root user if you don't want to enter the password during the process:
    ```bash
    sudo su
