@@ -13,7 +13,7 @@ Feel free to adapt the script for other purposes or scenarios.
    ```bash
    git clone https://github.com/eugeniogiusti/tomcat10_1_33_installation_script.git
    
-   cd tomcat10_1_33_installation_script.git
+   cd tomcat10_1_33_installation_script
 
 
 2. Grant Execution Permissions
