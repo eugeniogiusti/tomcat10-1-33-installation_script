@@ -1,6 +1,4 @@
 # Tomcat10_1_33_installation_script
-Automatic installation and configuration of Tomcat 10.1.33 with Java 11 // Red hat distros compatible
-# Java 11 and Tomcat 10.1.33 Installation Script
 
 This script has been tested on **AlmaLinux 9.5** and is compatible with the latest versions of **Rocky Linux** and **Red Hat**.  
 It installs **Java 11** and **Tomcat 10.1.33**. Feel free to adapt the script for other purposes or scenarios.
