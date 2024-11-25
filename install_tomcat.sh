@@ -6,7 +6,7 @@ INSTALL_DIR="/opt/tomcat"
 USER="tomcat"
 GROUP="tomcat"
 
-# Update system and install dependencies
+# Update system and install dependencies. Feel free to change your preferite version of Java
 echo "Updating system and installing dependencies..."
 sudo dnf update -y
 sudo dnf install -y java-11-openjdk wget tar
