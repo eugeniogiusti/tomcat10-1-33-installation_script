@@ -26,6 +26,7 @@ Give the script executable permissions:
 Switch to the root user if you don't want to enter the password during the process:
    ```bash
    sudo su
+   dnf check-update
    ./install_tomcat.sh
 
 
