@@ -46,3 +46,6 @@ Ensure the rule has been applied:
 Open your browser and navigate to:
    ```bash
 http://your_ip:8080/
+
+![image](https://github.com/user-attachments/assets/c561f99a-7856-4ff0-b352-43f9d6e57922)
+
