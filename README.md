@@ -46,5 +46,6 @@ Ensure the rule has been applied:
 Open your browser and navigate to:
 http://your_local_ip:8080/
 
-![image](https://github.com/user-attachments/assets/c561f99a-7856-4ff0-b352-43f9d6e57922)
+![image](https://github.com/user-attachments/assets/25843573-a6b8-438e-842b-ed828e7ea267)
+
 
