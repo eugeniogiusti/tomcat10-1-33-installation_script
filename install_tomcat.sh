@@ -6,7 +6,47 @@ INSTALL_DIR="/opt/tomcat"
 USER="tomcat"
 GROUP="tomcat"
 
-# Update system and install dependencies. Feel free to change your favourite version of Java
+if ! dnf repolist enabled | grep -q "appstream"; then
+    echo "Enabling AppStream repository..."
+    dnf config-manager --set-enabled appstream
+fi
+
+
+
+# Pre-check: Ensure repositories and packages are available
+echo "Checking if required repositories are enabled..."
+
+# Verifica che DNF funzioni e i repository siano configurati
+if ! sudo dnf repolist &> /dev/null; then
+    echo "Error: DNF is not configured properly or no repositories are available."
+    echo "Please ensure you have a valid subscription or enabled repositories."
+    exit 1
+fi
+
+echo "Repositories are configured properly!"
+
+echo "Checking if required packages are available..."
+# Lista dei pacchetti necessari
+REQUIRED_PACKAGES=("java-11-openjdk" "wget")
+
+for PACKAGE in "${REQUIRED_PACKAGES[@]}"; do
+    if ! sudo dnf list --available "$PACKAGE" &> /dev/null; then
+        echo "Error: Package $PACKAGE is not available in the repositories."
+        echo "Please ensure the correct repositories are enabled."
+        exit 1
+    fi
+done
+
+echo "All required packages are available!"
+
+if ! rpm -q tar &>/dev/null; then
+    echo "Package tar is not installed."
+    exit 1
+else
+    echo "Package tar is installed."
+fi
+
+# Update system and install dependencies
 echo "Updating system and installing dependencies..."
 sudo dnf update -y
 sudo dnf install -y java-11-openjdk wget tar
