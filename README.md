@@ -48,7 +48,4 @@ http://your_local_ip:8080/
 
 ![image](https://github.com/user-attachments/assets/25843573-a6b8-438e-842b-ed828e7ea267)
 
-![image](https://github.com/user-attachments/assets/26919e2d-4f2e-4110-9921-83139b7c9467)
-
-
 
