@@ -3,8 +3,8 @@
 This script has been tested on **AlmaLinux 9.5** and is compatible with the latest versions of **Rocky Linux** and **Red Hat**.  
 It installs **Java 11** and **Tomcat 10.1.33**.
 The version of Tomcat is the latest and this version of Java ensures backward compatibility with legacy systems while also offering several of the latest Java features.
-You can manage Tomcat through systemd.
-The service's name is tomcat.
+A key feature of this script is the integration of Tomcat management directly with systemd, eliminating the need for manual execution of start and stop scripts.
+You can easily manage Tomcat using systemctl commands, with the service name being tomcat.
 Feel free to adapt the script for other purposes or scenarios.
 
 ## How to Use
