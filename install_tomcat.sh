@@ -6,6 +6,7 @@ INSTALL_DIR="/opt/tomcat"
 USER="tomcat"
 GROUP="tomcat"
 
+#Check AppStream repositories
 if ! dnf repolist enabled | grep -q "appstream"; then
     echo "Enabling AppStream repository..."
     dnf config-manager --set-enabled appstream
@@ -16,7 +17,7 @@ fi
 # Pre-check: Ensure repositories and packages are available
 echo "Checking if required repositories are enabled..."
 
-# Verifica che DNF funzioni e i repository siano configurati
+# Check DNF functions and repositories are configured
 if ! sudo dnf repolist &> /dev/null; then
     echo "Error: DNF is not configured properly or no repositories are available."
     echo "Please ensure you have a valid subscription or enabled repositories."
@@ -24,9 +25,9 @@ if ! sudo dnf repolist &> /dev/null; then
 fi
 
 echo "Repositories are configured properly!"
-
 echo "Checking if required packages are available..."
-# Lista dei pacchetti necessari
+
+# Required packages
 REQUIRED_PACKAGES=("java-11-openjdk" "wget")
 
 for PACKAGE in "${REQUIRED_PACKAGES[@]}"; do
