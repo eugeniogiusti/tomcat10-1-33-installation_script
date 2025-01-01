@@ -10,6 +10,10 @@ Feel free to adapt the script for other purposes or scenarios.
 1. **Clone or Download the Repository**  
    Download the script to your system or clone the repository:
    ```bash
+   dnf update -y
+   
+   dnf install git
+   
    git clone https://github.com/eugeniogiusti/tomcat10_1_33_installation_script.git
    
    cd tomcat10_1_33_installation_script
