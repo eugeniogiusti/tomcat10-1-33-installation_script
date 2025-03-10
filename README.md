@@ -1,4 +1,4 @@
-# Tomcat10_1_33_installation_script
+# Tomcat10-1-33-installation_script
 
 This script has been tested on **AlmaLinux 9.5** and is compatible with the latest versions of **Rocky Linux** and **Red Hat**.  
 It installs **Java 11** and **Tomcat 10.1.33**.
