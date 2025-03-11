@@ -1,4 +1,4 @@
-# Tomcat10-1-33-installation_script
+# Tomcat10-1-33-installation-script
 
 This script has been tested on **AlmaLinux 9.5** and is compatible with the latest versions of **Rocky Linux** and **Red Hat**.  
 It installs **Java 11** and **Tomcat 10.1.33**.
@@ -16,7 +16,7 @@ Feel free to adapt the script for other purposes or scenarios.
    
    git clone https://github.com/eugeniogiusti/tomcat10_1_33_installation_script.git
    
-   cd tomcat10_1_33_installation_script
+   cd tomcat10-1-33-installation-script
 
 
 2. Grant Execution Permissions
